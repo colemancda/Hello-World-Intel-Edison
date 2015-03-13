@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <mraa.h>
 
 int main()
 {
