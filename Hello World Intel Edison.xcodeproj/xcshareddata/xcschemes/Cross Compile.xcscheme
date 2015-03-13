@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E0685F41AB291410047BDDB"
-               BuildableName = "Source"
-               BlueprintName = "Source"
+               BlueprintIdentifier = "6E06860C1AB296AD0047BDDB"
+               BuildableName = "Cross Compile"
+               BlueprintName = "Cross Compile"
                ReferencedContainer = "container:Hello World Intel Edison.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E0685F41AB291410047BDDB"
-            BuildableName = "Source"
-            BlueprintName = "Source"
+            BlueprintIdentifier = "6E06860C1AB296AD0047BDDB"
+            BuildableName = "Cross Compile"
+            BlueprintName = "Cross Compile"
             ReferencedContainer = "container:Hello World Intel Edison.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E0685F41AB291410047BDDB"
-            BuildableName = "Source"
-            BlueprintName = "Source"
+            BlueprintIdentifier = "6E06860C1AB296AD0047BDDB"
+            BuildableName = "Cross Compile"
+            BlueprintName = "Cross Compile"
             ReferencedContainer = "container:Hello World Intel Edison.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

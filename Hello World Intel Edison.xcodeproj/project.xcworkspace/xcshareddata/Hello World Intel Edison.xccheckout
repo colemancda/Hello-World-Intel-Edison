@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EC0A3E1B-CCA3-4ABD-846E-3C5D74053F33</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hello World Intel Edison</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>69F3CE7F359493A3BC88E499A84ACB3D9CC7774B</key>
+		<string>https://github.com/colemancda/Hello-World-Intel-Edison.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hello World Intel Edison.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>69F3CE7F359493A3BC88E499A84ACB3D9CC7774B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/colemancda/Hello-World-Intel-Edison.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>69F3CE7F359493A3BC88E499A84ACB3D9CC7774B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69F3CE7F359493A3BC88E499A84ACB3D9CC7774B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hello%20World%20Intel%20Edison</string>
+		</dict>
+	</array>
+</dict>
+</plist>

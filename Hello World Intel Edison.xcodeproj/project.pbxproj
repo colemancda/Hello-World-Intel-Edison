@@ -7,28 +7,18 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		6E0685F41AB291410047BDDB /* Source */ = {
+		6E06860C1AB296AD0047BDDB /* Cross Compile */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 6E0685F51AB291410047BDDB /* Build configuration list for PBXAggregateTarget "Source" */;
+			buildConfigurationList = 6E06860D1AB296AD0047BDDB /* Build configuration list for PBXAggregateTarget "Cross Compile" */;
 			buildPhases = (
-				6E0685F81AB291470047BDDB /* ShellScript */,
+				6E0686101AB296BB0047BDDB /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = Source;
-			productName = Source;
+			name = "Cross Compile";
+			productName = "Cross Compile";
 		};
 /* End PBXAggregateTarget section */
-
-/* Begin PBXContainerItemProxy section */
-		6E0685F91AB291620047BDDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E0685DE1AB27A9F0047BDDB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E0685F41AB291410047BDDB;
-			remoteInfo = Source;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E0685E51AB27A9F0047BDDB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -46,31 +36,13 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXLegacyTarget section */
-		6E0685E21AB27A9F0047BDDB /* Hello World Intel Edison */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = 6E0685E71AB27A9F0047BDDB /* Build configuration list for PBXLegacyTarget "Hello World Intel Edison" */;
-			buildPhases = (
-			);
-			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/Coleman/Developer/MyProjects/Hello World Intel Edison";
-			dependencies = (
-				6E0685FA1AB291620047BDDB /* PBXTargetDependency */,
-			);
-			name = "Hello World Intel Edison";
-			passBuildSettingsInEnvironment = 1;
-			productName = "Hello World Intel Edison";
-		};
-/* End PBXLegacyTarget section */
-
 /* Begin PBXProject section */
 		6E0685DE1AB27A9F0047BDDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				TargetAttributes = {
-					6E0685F41AB291410047BDDB = {
+					6E06860C1AB296AD0047BDDB = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -86,14 +58,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E0685E21AB27A9F0047BDDB /* Hello World Intel Edison */,
-				6E0685F41AB291410047BDDB /* Source */,
+				6E06860C1AB296AD0047BDDB /* Cross Compile */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6E0685F81AB291470047BDDB /* ShellScript */ = {
+		6E0686101AB296BB0047BDDB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,22 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source /opt/poky-edison/$EDISON_YOCTO_VERSION/environment-setup-core2-32-poky-linux";
+			shellScript = "source /opt/poky-edison/$EDISON_YOCTO_VERSION/environment-setup-core2-32-poky-linux\nmake";
 		};
 /* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6E0685FA1AB291620047BDDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E0685F41AB291410047BDDB /* Source */;
-			targetProxy = 6E0685F91AB291620047BDDB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6E0685DF1AB27A9F0047BDDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EDISON_YOCTO_VERSION = 1.6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = $PROJECT_NAME;
 			};
@@ -128,50 +92,22 @@
 		6E0685E01AB27A9F0047BDDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EDISON_YOCTO_VERSION = 1.6.1;
 				PRODUCT_NAME = $PROJECT_NAME;
 			};
 			name = Release;
 		};
-		6E0685E81AB27A9F0047BDDB /* Debug */ = {
+		6E06860E1AB296AD0047BDDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DEBUGGING_SYMBOLS = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "Hello World Intel Edison";
-				SDKROOT = macosx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		6E0685E91AB27A9F0047BDDB /* Release */ = {
+		6E06860F1AB296AD0047BDDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "Hello World Intel Edison";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		6E0685F61AB291410047BDDB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EDISON_YOCTO_VERSION = 1.6.1;
-			};
-			name = Debug;
-		};
-		6E0685F71AB291410047BDDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EDISON_YOCTO_VERSION = 1.6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -187,20 +123,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E0685E71AB27A9F0047BDDB /* Build configuration list for PBXLegacyTarget "Hello World Intel Edison" */ = {
+		6E06860D1AB296AD0047BDDB /* Build configuration list for PBXAggregateTarget "Cross Compile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E0685E81AB27A9F0047BDDB /* Debug */,
-				6E0685E91AB27A9F0047BDDB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E0685F51AB291410047BDDB /* Build configuration list for PBXAggregateTarget "Source" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E0685F61AB291410047BDDB /* Debug */,
-				6E0685F71AB291410047BDDB /* Release */,
+				6E06860E1AB296AD0047BDDB /* Debug */,
+				6E06860F1AB296AD0047BDDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
