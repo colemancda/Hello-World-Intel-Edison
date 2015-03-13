@@ -6,6 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6E0685F41AB291410047BDDB /* Source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6E0685F51AB291410047BDDB /* Build configuration list for PBXAggregateTarget "Source" */;
+			buildPhases = (
+				6E0685F81AB291470047BDDB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Source;
+			productName = Source;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		6E0685F91AB291620047BDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0685DE1AB27A9F0047BDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0685F41AB291410047BDDB;
+			remoteInfo = Source;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6E0685E51AB27A9F0047BDDB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		6E0685E61AB27A9F0047BDDB /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
@@ -32,6 +56,7 @@
 			buildToolPath = /usr/bin/make;
 			buildWorkingDirectory = "/Users/Coleman/Developer/MyProjects/Hello World Intel Edison";
 			dependencies = (
+				6E0685FA1AB291620047BDDB /* PBXTargetDependency */,
 			);
 			name = "Hello World Intel Edison";
 			passBuildSettingsInEnvironment = 1;
@@ -43,6 +68,12 @@
 		6E0685DE1AB27A9F0047BDDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0620;
+				TargetAttributes = {
+					6E0685F41AB291410047BDDB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
 			};
 			buildConfigurationList = 6E0685E11AB27A9F0047BDDB /* Build configuration list for PBXProject "Hello World Intel Edison" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -56,31 +87,48 @@
 			projectRoot = "";
 			targets = (
 				6E0685E21AB27A9F0047BDDB /* Hello World Intel Edison */,
+				6E0685F41AB291410047BDDB /* Source */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E0685F81AB291470047BDDB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source /opt/poky-edison/$EDISON_YOCTO_VERSION/environment-setup-core2-32-poky-linux";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E0685FA1AB291620047BDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0685F41AB291410047BDDB /* Source */;
+			targetProxy = 6E0685F91AB291620047BDDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6E0685DF1AB27A9F0047BDDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.6;
+				PRODUCT_NAME = $PROJECT_NAME;
 			};
 			name = Debug;
 		};
 		6E0685E01AB27A9F0047BDDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				SDKROOT = macosx10.6;
+				PRODUCT_NAME = $PROJECT_NAME;
 			};
 			name = Release;
 		};
@@ -113,6 +161,20 @@
 			};
 			name = Release;
 		};
+		6E0685F61AB291410047BDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EDISON_YOCTO_VERSION = 1.6.1;
+			};
+			name = Debug;
+		};
+		6E0685F71AB291410047BDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EDISON_YOCTO_VERSION = 1.6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -133,6 +195,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6E0685F51AB291410047BDDB /* Build configuration list for PBXAggregateTarget "Source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0685F61AB291410047BDDB /* Debug */,
+				6E0685F71AB291410047BDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
